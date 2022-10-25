@@ -1,0 +1,31 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Site web librairie Manon",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halok-03/Librairie_de_manon.git"
+  },
+  "author": "Baptiste Azevedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Halok-03/Librairie_de_manon/issues"
+  },
+  "homepage": "https://github.com/Halok-03/Librairie_de_manon#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.0",
+    "mongoose-unique-validator": "^3.1.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
