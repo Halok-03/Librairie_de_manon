@@ -3,6 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const path = require('path');
 const userRoutes = require('./routes/userRoutes')
+const bookRoutes = require('./routes/bookRoutes')
 // import environement variables
 require('dotenv').config();
 
@@ -21,8 +22,8 @@ app.use((req, res, next) => {
     next();
   });
 
-//app.use('/api/books', booksRoutes) // Routes par défaut des livres
+app.use('/api/book', bookRoutes) // Routes par défaut des livres
 app.use('/api/auth', userRoutes) // Routes par défaut pour l'inscription/connection
-//app.use('/images', express.static(path.join(__dirname, 'images'))) // Permet l'acces a la ressource statique image
+app.use('/images', express.static(path.join(__dirname, 'images'))) // Permet l'acces a la ressource statique image
 
 module.exports = app 
